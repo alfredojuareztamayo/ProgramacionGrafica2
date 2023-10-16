@@ -37,7 +37,7 @@ int main(int argc, char** argv) {
     glutCreateWindow("Cubo OpenGL");
 
     glutDisplayFunc(displayCube);
-    glutKeyboardFunc(keyboard);
+   // glutKeyboardFunc(keyboard);
     glutReshapeFunc(reshape);
 
     glEnable(GL_DEPTH_TEST);
