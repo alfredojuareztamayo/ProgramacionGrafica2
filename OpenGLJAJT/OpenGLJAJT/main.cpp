@@ -1,6 +1,8 @@
 #include "main.h"
-
+#include "Figures.h"
 #include <GL/glut.h>
+
+
 
 void displayCuadrado() {
     glClear(GL_COLOR_BUFFER_BIT);  // Limpiar el búfer de color
@@ -18,113 +20,7 @@ void displayCuadrado() {
 }
 
 
-void display() {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    glMatrixMode(GL_MODELVIEW);
-    glLoadIdentity();
-    gluLookAt(3.0, 3.0, 3.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 
-    glBegin(GL_QUADS);
-
-    // Cara frontal
-    glColor3f(1.0, 0.0, 0.0); // Rojo
-    glVertex3f(-1.0, -1.0, 1.0);
-    glVertex3f(-0.5,-1.0,1.0);
-    glVertex3f(-0.5,-0.5,1.0);
-    glVertex3f(-1.0,-0.5,1.0);
-
-    // Cara frontal2.0
-    glColor3f(0.0, 1.0, 0.0); // VERDE
-    glVertex3f(-0.5, -1.0, 1.0);
-    glVertex3f(0.5,-1.0,1.0);
-    glVertex3f(0.5,-0.5,1.0);
-    glVertex3f(-0.5,-0.5,1.0);
-    // Cara frontal3.0
-    glColor3f(1.0, 0.0, 1.0); // AZUL
-    glVertex3f(0.5,-1.0,1.0);
-    glVertex3f(1.0,-1.0,1.0);
-    glVertex3f(1.0,-0.5,1.0);
-    glVertex3f(0.5,-0.5,1.0);
-    // Cara frontal4.0
-    glColor3f(1.0, 1.0, 0.0); // AMA
-    glVertex3f(-1.0,-0.5,1.0);
-    glVertex3f(-0.5,-0.5,1.0);
-    glVertex3f(-0.5,0.5,1.0);
-    glVertex3f(-1.0,0.5,1.0);
-    // Cara frontal5.0
-    glColor3f(0.0,0.0,0.0); // BLANCO
-    glVertex3f(-0.5, -0.5, 1.0);
-    glVertex3f(0.5,-0.5,1.0);
-    glVertex3f(0.5,0.5,1.0);
-    glVertex3f(-0.5, 0.5, 1.0);
-    // Cara frontal6.0
-    glColor3f(0.0, 0.1, 0.1); // CIAN
-    glVertex3f(0.5, -0.5, 1.0);
-    glVertex3f(1.0, -0.5, 1.0);
-    glVertex3f(1.0, 0.5, 1.0);
-    glVertex3f(0.5, 0.5, 1.0);
-    // Cara frontal7.0
-    glColor3f(1.0, 0.0, 1.0); // MAGENTA
-    glVertex3f(-1.0, 0.5, 1.0);
-    glVertex3f(-0.5, 0.5, 1.0);
-    glVertex3f(-0.5,1.0,1.0);
-    glVertex3f(-1.0, 1.0, 1.0);
-    // Cara frontal8.0
-    glColor3f(1.0, 0.0, 0.0); // NEGRO
-    glVertex3f(-0.5,0.5,1.0);
-    glVertex3f(0.5,0.5,1.0);
-    glVertex3f(0.5,1.0,1.0);
-    glVertex3f(-0.5,1.0,1.0);
-    // Cara frontal9.0
-    glColor3f(0.5, 0.5, 0.5); // GRIS
-    glVertex3f(0.5,0.5,1.0);
-    glVertex3f(1.0,0.5,1.0);
-    glVertex3f(1.0,1.0,1.0);
-    glVertex3f(0.5,1.0,1.0);
-
-
-
-
-
-    //// Cara trasera
-    //glColor3f(0.0, 0.0, 1.0); // Azul
-    //glVertex3f(-1.0, -1.0, -1.0);
-    //glVertex3f(1.0, -1.0, -1.0);
-    //glVertex3f(1.0, 1.0, -1.0);
-    //glVertex3f(-1.0, 1.0, -1.0);
-
-    //// Cara superior
-    //glColor3f(0.0, 1.0, 0.0); // Verde
-    //glVertex3f(-1.0, 1.0, 1.0);
-    //glVertex3f(1.0, 1.0, 1.0);
-    //glVertex3f(1.0, 1.0, -1.0);
-    //glVertex3f(-1.0, 1.0, -1.0);
-
-    //// Cara inferior
-    //glColor3f(1.0, 1.0, 0.0); // Amarillo
-    //glVertex3f(-1.0, -1.0, 1.0);
-    //glVertex3f(1.0, -1.0, 1.0);
-    //glVertex3f(1.0, -1.0, -1.0);
-    //glVertex3f(-1.0, -1.0, -1.0);
-
-    //// Cara izquierda
-    //glColor3f(1.0, 0.0, 1.0); // Magenta
-    //glVertex3f(-1.0, -1.0, 1.0);
-    //glVertex3f(-1.0, 1.0, 1.0);
-    //glVertex3f(-1.0, 1.0, -1.0);
-    //glVertex3f(-1.0, -1.0, -1.0);
-
-    //// Cara derecha
-    //glColor3f(0.0, 1.0, 1.0); // Cian
-    //glVertex3f(1.0, -1.0, 1.0);
-    //glVertex3f(1.0, 1.0, 1.0);
-    //glVertex3f(1.0, 1.0, -1.0);
-    //glVertex3f(1.0, -1.0, -1.0);
-
-    glEnd();
-
-    glutSwapBuffers();
-}
 
 void reshape(int width, int height) {
     glViewport(0, 0, width, height);
@@ -133,13 +29,15 @@ void reshape(int width, int height) {
     gluPerspective(45.0, (GLfloat)width / (GLfloat)height, 1.0, 10.0);
 }
 
+
 int main(int argc, char** argv) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize(800, 600);
     glutCreateWindow("Cubo OpenGL");
 
-    glutDisplayFunc(display);
+    glutDisplayFunc(displayCube);
+    glutKeyboardFunc(keyboard);
     glutReshapeFunc(reshape);
 
     glEnable(GL_DEPTH_TEST);
