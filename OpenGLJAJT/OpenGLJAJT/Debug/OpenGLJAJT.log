@@ -1,8 +1,2 @@
 ﻿  Figures.cpp
-  Transformations.cpp
-C:\Users\Alumno\source\repos\ProgramacionGrafica2\OpenGLJAJT\OpenGLJAJT\Transformations.cpp(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-C:\Users\Alumno\source\repos\ProgramacionGrafica2\OpenGLJAJT\OpenGLJAJT\Transformations.cpp(13,24): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\Alumno\source\repos\ProgramacionGrafica2\OpenGLJAJT\OpenGLJAJT\Transformations.cpp(20,24): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-C:\Users\Alumno\source\repos\ProgramacionGrafica2\OpenGLJAJT\OpenGLJAJT\Transformations.cpp(27,24): warning C4244: '=': conversión de 'double' a 'float'; posible pérdida de datos
-  Generando código...
-  OpenGLJAJT.vcxproj -> C:\Users\Alumno\source\repos\ProgramacionGrafica2\OpenGLJAJT\Debug\OpenGLJAJT.exe
+  OpenGLJAJT.vcxproj -> D:\ProjectsUnity\ProgramacionGrafica2\OpenGLJAJT\Debug\OpenGLJAJT.exe

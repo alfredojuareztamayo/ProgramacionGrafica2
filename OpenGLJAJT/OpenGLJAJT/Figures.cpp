@@ -11,32 +11,343 @@ void displayCube() {
 
     Translate vertices[] =
     {
+        //1
          Translate (-1.0, -1.0, 1.0),
          Translate(-0.33, -1.0, 1.0),
          Translate(-0.33, -0.33, 1.0),
          Translate(-1.0,-0.33,1.0),
-         
+         //2
          Translate(-0.33, -1.0, 1.0),
          Translate(0.33, -1.0, 1.0),
          Translate(0.33, -0.33, 1.0),
          Translate(-0.33, -0.33, 1.0),
-
+         //3
          Translate(1.0, 0.0, 0.0),
          Translate(0.33, -1.0, 1.0),
          Translate(1.0, -1.0, 1.0),
          Translate(1.0, -0.33, 1.0),
          Translate(0.33, -0.33, 1.0),
-      
+            //4
          Translate(-1.0, -0.33, 1.0),
          Translate(-0.33, -0.33, 1.0),
          Translate(-0.33, 0.33, 1.0),
          Translate(-1.0, 0.33, 1.0),
-
+         //5
         
         Translate(-0.33, -0.33, 1.0),
         Translate(0.33, -0.33, 1.0),
         Translate(0.33, 0.33, 1.0),
         Translate(-0.33, 0.33, 1.0),
+        //6
+        Translate(0.33, -0.33, 1.0),
+        Translate(1.0, -0.33, 1.0),
+        Translate(1.0, 0.33, 1.0),
+        Translate(0.33, 0.33, 1.0),
+        //7
+        Translate(-1.0, 0.33, 1.0),
+        Translate(-0.33, 0.33, 1.0),
+        Translate(-0.33, 1.0, 1.0),
+        Translate(-1.0, 1.0, 1.0),
+
+        // Cara frontal8.0
+       
+       Translate(-0.33, 0.33, 1.0),
+       Translate(0.33, 0.33, 1.0),
+       Translate(0.33, 1.0, 1.0),
+       Translate(-0.33, 1.0, 1.0),
+       // Cara frontal9.0
+       
+       Translate(0.33, 0.33, 1.0),
+       Translate(1.0, 0.33, 1.0),
+       Translate(1.0, 1.0, 1.0),
+       Translate(0.33, 1.0, 1.0),
+
+       // Cara Trasera
+       
+        Translate(-1.0, -1.0, -1.0),
+        Translate(-0.33, -1.0, -1.0),
+        Translate(-0.33, -0.33, -1.0),
+        Translate(-1.0, -0.33, -1.0),
+
+        // Cara Trasera2.0
+     
+         Translate(-0.33, -1.0, -1.0),
+         Translate(0.33, -1.0, -1.0),
+         Translate(0.33, -0.33, -1.0),
+         Translate(-0.33, -0.33, -1.0),
+             // Cara Trasera3.0
+           
+         Translate(0.33, -1.0, -1.0),
+         Translate(1.0, -1.0, -1.0),
+         Translate(1.0, -0.33, -1.0),
+         Translate(0.33, -0.33, -1.0),
+             // Cara Trasera4.0
+            
+         Translate(-1.0, -0.33, -1.0),
+         Translate(-0.33, -0.33, -1.0),
+         Translate(-0.33, 0.33, -1.0),
+         Translate(-1.0, 0.33, -1.0),
+             // Cara Trasera5.0
+          
+         Translate(-0.33, -0.33, -1.0),
+         Translate(0.33, -0.33, -1.0),
+         Translate(0.33, 0.33, -1.0),
+         Translate(-0.33, 0.33, -1.0),
+             // Cara Trasera6.0
+  
+         Translate(0.33, -0.33, -1.0),
+         Translate(1.0, -0.33, -1.0),
+         Translate(1.0, 0.33, -1.0),
+         Translate(0.33, 0.33, -1.0),
+             // Cara Trasera7.0
+         
+         Translate(-1.0, 0.33, -1.0),
+         Translate(-0.33, 0.33, -1.0),
+         Translate(-0.33, 1.0, -1.0),
+         Translate(-1.0, 1.0, -1.0),
+             // Cara Trasera8.0
+            
+         Translate(-0.33, 0.33, -1.0),
+         Translate(0.33, 0.33, -1.0),
+         Translate(0.33, 1.0, -1.0),
+         Translate(-0.33, 1.0, -1.0),
+        // Cara Trasera9.0
+     
+        Translate(0.33, 0.33, -1.0),
+        Translate(1.0, 0.33, -1.0),
+        Translate(1.0, 1.0, -1.0),
+        Translate(0.33, 1.0, -1.0),
+
+        // Cara LD
+         
+             Translate(1.0, -1.0, 1.0),
+         Translate(1.0, -1.0, 0.33),
+         Translate(1.0, -0.33, 0.33),
+         Translate(1.0, -0.33, 1.0),
+
+         // Cara LD 2.0
+      
+         Translate(1.0, -1.0, 0.33),
+         Translate(1.0, -1.0, -0.33),
+         Translate(1.0, -0.33, -0.33),
+         Translate(1.0, -0.33, 0.33),
+         // Cara LD 3.0
+        
+         Translate(1.0, -1.0, -0.33),
+         Translate(1.0, -1.0, -1.0),
+         Translate(1.0, -0.33, -1.0),
+         Translate(1.0, -0.33, -0.33),
+         // Cara LD 4.0
+       
+         Translate(1.0, -0.33, 1.0),
+         Translate(1.0, -0.33, 0.33),
+         Translate(1.0, 0.33, 0.33),
+         Translate(1.0, 0.33, 1.0),
+         // Cara LD 5.0
+      
+         Translate(1.0, -0.33, 0.33),
+         Translate(1.0, -0.33, -0.33),
+         Translate(1.0, 0.33, -0.33),
+         Translate(1.0, 0.33, 0.33),
+         // Cara LD 6.0
+     
+         Translate(1.0, -0.33, -0.33),
+         Translate(1.0, -0.33, -1.0),
+         Translate(1.0, 0.33, -1.0),
+         Translate(1.0, 0.33, -0.33),
+         // Cara LD 7.0
+
+         Translate(1.0, 0.33, 1.0),
+         Translate(1.0, 0.33, 0.33),
+         Translate(1.0, 1.0, 0.33),
+         Translate(1.0, 1.0, 1.0),
+         // Cara LD 8.0
+       
+         Translate(1.0, 0.33, 0.33),
+         Translate(1.0, 0.33, -0.33),
+         Translate(1.0, 1.0, -0.33),
+         Translate(1.0, 1.0, 0.33),
+         // Cara LD 9.0
+
+         Translate(1.0, 0.33, -0.33),
+         Translate(1.0, 0.33, -1.0),
+         Translate(1.0, 1.0, -1.0),
+         Translate(1.0, 1.0, -0.33),
+
+
+         //Cara LI
+
+       // Cara LI
+       
+         Translate(-1.0, -1.0, 1.0),
+         Translate(-1.0, -1.0, 0.33),
+         Translate(-1.0, -0.33, 0.33),
+         Translate(-1.0, -0.33, 1.0),
+
+         // Cara LI 2.0
+
+         Translate(-1.0, -1.0, 0.33),
+         Translate(-1.0, -1.0, -0.33),
+         Translate(-1.0, -0.33, -0.33),
+         Translate(-1.0, -0.33, 0.33),
+         // Cara LI 3.0
+
+         Translate(-1.0, -1.0, -0.33),
+         Translate(-1.0, -1.0, -1.0),
+         Translate(-1.0, -0.33, -1.0),
+         Translate(-1.0, -0.33, -0.33),
+         // Cara LI 4.0
+  
+         Translate(-1.0, -0.33, 1.0),
+         Translate(-1.0, -0.33, 0.33),
+         Translate(-1.0, 0.33, 0.33),
+         Translate(-1.0, 0.33, 1.0),
+         // Cara LI 5.0
+        
+         Translate(-1.0, -0.33, 0.33),
+         Translate(-1.0, -0.33, -0.33),
+         Translate(-1.0, 0.33, -0.33),
+         Translate(-1.0, 0.33, 0.33),
+         // Cara LI 6.0
+
+         Translate(-1.0, -0.33, -0.33),
+         Translate(-1.0, -0.33, -1.0),
+         Translate(-1.0, 0.33, -1.0),
+         Translate(-1.0, 0.33, -0.33),
+         // Cara LI 7.0
+
+         Translate(-1.0, 0.33, 1.0),
+         Translate(-1.0, 0.33, 0.33),
+         Translate(-1.0, 1.0, 0.33),
+         Translate(-1.0, 1.0, 1.0),
+         // Cara LI 8.0
+    
+         Translate(-1.0, 0.33, 0.33),
+         Translate(-1.0, 0.33, -0.33),
+         Translate(-1.0, 1.0, -0.33),
+         Translate(-1.0, 1.0, 0.33),
+         // Cara LI 9.0
+        
+         Translate(-1.0, 0.33, -0.33),
+         Translate(-1.0, 0.33, -1.0),
+         Translate(-1.0, 1.0, -1.0),
+         Translate(-1.0, 1.0, -0.33),
+
+         //Cara TOP
+
+      // Cara TOP
+       
+         Translate(-1.0, 1.0, 1.0),
+         Translate(-0.33, 1.0, 1.0),
+         Translate(-0.33, 1.0, 0.33),
+         Translate(-1.0, 1.0, 0.33),
+
+         // Cara TOP 2.0
+
+         Translate(-0.33, 1.0, 1.0),
+         Translate(0.33, 1.0, 1.0),
+         Translate(0.33, 1.0, 0.33),
+         Translate(-0.33, 1.0, 0.33),
+         // Cara TOP 3.0
+      
+         Translate(0.33, 1.0, 1.0),
+         Translate(1.0, 1.0, 1.0),
+         Translate(1.0, 1.0, 0.33),
+         Translate(0.33, 1.0, 0.33),
+         // Cara TOP 4.0
+         Translate(-1.0, 1.0, 0.33),
+         Translate(-0.33, 1.0, 0.33),
+         Translate(-0.33, 1.0, -0.33),
+         Translate(-1.0, 1.0, -0.33),
+         // Cara TOP 5.0
+       
+         Translate(-0.33, 1.0, 0.33),
+         Translate(0.33, 1.0, 0.33),
+         Translate(0.33, 1.0, -0.33),
+         Translate(-0.33, 1.0, -0.33),
+         // Cara TOP 6.0
+      
+         Translate(0.33, 1.0, 0.33),
+         Translate(1.0, 1.0, 0.33),
+         Translate(1.0, 1.0, -0.33),
+         Translate(0.33, 1.0, -0.33),
+         // Cara TOP 7.0
+
+         Translate(-1.0, 1.0, -0.33),
+         Translate(-0.33, 1.0, -0.33),
+         Translate(-0.33, 1.0, -1.0),
+         Translate(-1.0, 1.0, -1.0),
+         // Cara TOP 8.0
+     
+         Translate(-0.33, 1.0, -0.33),
+         Translate(0.33, 1.0, 0.33),
+         Translate(0.33, 1.0, -1.0),
+         Translate(-0.33, 1.0, -1.0),
+         // Cara TOP 9.0
+     
+         Translate(0.33, 1.0, -0.33),
+         Translate(1.0, 1.0, -0.33),
+         Translate(1.0, 1.0, -1.0),
+         Translate(0.33, 1.0, -1.0),
+
+
+         //Cara Bot
+
+     // Cara Bot
+
+         Translate(-1.0, -1.0, 1.0),
+         Translate(-0.33, -1.0, 1.0),
+         Translate(-0.33, -1.0, 0.33),
+         Translate(-1.0, -1.0, 0.33),
+
+         // Cara Bot 2.0
+
+         Translate(-0.33, -1.0, 1.0),
+         Translate(0.33, -1.0, 1.0),
+         Translate(0.33, -1.0, 0.33),
+         Translate(-0.33, -1.0, 0.33),
+         // Cara Bot 3.0
+
+         Translate(0.33, -1.0, 1.0),
+         Translate(1.0, -1.0, 1.0),
+         Translate(1.0, -1.0, 0.33),
+         Translate(0.33, -1.0, 0.33),
+         // Cara Bot 4.0
+      
+         Translate(-1.0, -1.0, 0.33),
+         Translate(-0.33, -1.0, 0.33),
+         Translate(-0.33, -1.0, -0.33),
+         Translate(-1.0, -1.0, -0.33),
+         // Cara Bot 5.0
+
+         Translate(-0.33, -1.0, 0.33),
+         Translate(0.33, -1.0, 0.33),
+         Translate(0.33, -1.0, -0.33),
+         Translate(-0.33, -1.0, -0.33),
+         // Cara Bot 6.0
+   
+         Translate(0.33, -1.0, 0.33),
+         Translate(1.0, -1.0, 0.33),
+         Translate(1.0, -1.0, -0.33),
+         Translate(0.33, -1.0, -0.33),
+         // Cara Bot 7.0
+      
+         Translate(-1.0, -1.0, -0.33),
+         Translate(-0.33, -1.0, -0.33),
+         Translate(-0.33, -1.0, -1.0),
+         Translate(-1.0, -1.0, -1.0),
+         // Cara Bot 8.0
+
+         Translate(-0.33, -1.0, -0.33),
+         Translate(0.33, -1.0, 0.33),
+         Translate(0.33, -1.0, -1.0),
+         Translate(-0.33, -1.0, -1.0),
+         // Cara Bot 9.0
+
+         Translate(0.33, -1.0, -0.33),
+         Translate(1.0, -1.0, -0.33),
+         Translate(1.0, -1.0, -1.0),
+         Translate(0.33, -1.0, -1.0)
 
     };
 
@@ -75,357 +386,14 @@ void displayCube() {
         // Aplica la rotación al cuadrado
         //glRotatef(rotationAngle, posX, posY, posZ);
 
-        glBegin(GL_QUADS);
-
-        // Cara frontal
-        glColor3f(1.0, 0.0, 0.0); // Rojo
-        glVertex3f(vertices[0].GetX(), vertices[0].GetY(), vertices[0].GetZ());
-        glVertex3f(vertices[1].GetX(), vertices[1].GetY(), vertices[1].GetZ());
-        glVertex3f(vertices[2].GetX(), vertices[2].GetY(), vertices[2].GetZ());
-        glVertex3f(vertices[3].GetX(), vertices[3].GetY(), vertices[3].GetZ());
-
-        // Cara frontal2.0
-        glColor3f(1.0, 0.0, 0.0); // VERDE
-        glVertex3f(-0.33, -1.0, 1.0);
-        glVertex3f(0.33, -1.0, 1.0);
-        glVertex3f(0.33, -0.33, 1.0);
-        glVertex3f(-0.33, -0.33, 1.0);
-        // Cara frontal3.0
-        glColor3f(1.0, 0.0, 0.0); // AZUL
-        glVertex3f(0.33, -1.0, 1.0);
-        glVertex3f(1.0, -1.0, 1.0);
-        glVertex3f(1.0, -0.33, 1.0);
-        glVertex3f(0.33, -0.33, 1.0);
-        // Cara frontal4.0
-        glColor3f(1.0, 0.0, 0.0); // AMA
-        glVertex3f(-1.0, -0.33, 1.0);
-        glVertex3f(-0.33, -0.33, 1.0);
-        glVertex3f(-0.33, 0.33, 1.0);
-        glVertex3f(-1.0, 0.33, 1.0);
-        // Cara frontal5.0
-        glColor3f(1.0, 0.0, 0.0); // BLANCO
-        glVertex3f(-0.33, -0.33, 1.0);
-        glVertex3f(0.33, -0.33, 1.0);
-        glVertex3f(0.33, 0.33, 1.0);
-        glVertex3f(-0.33, 0.33, 1.0);
-        // Cara frontal6.0
-        glColor3f(1.0, 0.0, 0.0); // CIAN
-        glVertex3f(0.33, -0.33, 1.0);
-        glVertex3f(1.0, -0.33, 1.0);
-        glVertex3f(1.0, 0.33, 1.0);
-        glVertex3f(0.33, 0.33, 1.0);
-        // Cara frontal7.0
-        glColor3f(1.0, 0.0, 0.0); // MAGENTA
-        glVertex3f(-1.0, 0.33, 1.0);
-        glVertex3f(-0.33, 0.33, 1.0);
-        glVertex3f(-0.33, 1.0, 1.0);
-        glVertex3f(-1.0, 1.0, 1.0);
-        // Cara frontal8.0
-        glColor3f(1.0, 0.0, 0.0); // NEGRO
-        glVertex3f(-0.33, 0.33, 1.0);
-        glVertex3f(0.33, 0.33, 1.0);
-        glVertex3f(0.33, 1.0, 1.0);
-        glVertex3f(-0.33, 1.0, 1.0);
-        // Cara frontal9.0
-        glColor3f(1.0, 0.0, 0.0); // GRIS
-        glVertex3f(0.33, 0.33, 1.0);
-        glVertex3f(1.0, 0.33, 1.0);
-        glVertex3f(1.0, 1.0, 1.0);
-        glVertex3f(0.33, 1.0, 1.0);
-
-        //Cara Trasera
-
-        // Cara Trasera
-        glColor3f(0.0, 1.0, 0.0); // Rojo
-        glVertex3f(-1.0, -1.0, -1.0);
-        glVertex3f(-0.33, -1.0, -1.0);
-        glVertex3f(-0.33, -0.33, -1.0);
-        glVertex3f(-1.0, -0.33, -1.0);
-
-        // Cara Trasera2.0
-        glColor3f(0.0, 1.0, 0.0); // VERDE
-        glVertex3f(-0.33, -1.0, -1.0);
-        glVertex3f(0.33, -1.0, -1.0);
-        glVertex3f(0.33, -0.33, -1.0);
-        glVertex3f(-0.33, -0.33, -1.0);
-        // Cara Trasera3.0
-        glColor3f(0.0, 1.0, 0.0); // AZUL
-        glVertex3f(0.33, -1.0, -1.0);
-        glVertex3f(1.0, -1.0, -1.0);
-        glVertex3f(1.0, -0.33, -1.0);
-        glVertex3f(0.33, -0.33, -1.0);
-        // Cara Trasera4.0
-        glColor3f(0.0, 1.0, 0.0); // AMA
-        glVertex3f(-1.0, -0.33, -1.0);
-        glVertex3f(-0.33, -0.33, -1.0);
-        glVertex3f(-0.33, 0.33, -1.0);
-        glVertex3f(-1.0, 0.33, -1.0);
-        // Cara Trasera5.0
-        glColor3f(0.0, 1.0, 0.0); // BLANCO
-        glVertex3f(-0.33, -0.33, -1.0);
-        glVertex3f(0.33, -0.33, -1.0);
-        glVertex3f(0.33, 0.33, -1.0);
-        glVertex3f(-0.33, 0.33, -1.0);
-        // Cara Trasera6.0
-        glColor3f(0.0, 1.0, 0.0); // CIAN
-        glVertex3f(0.33, -0.33, -1.0);
-        glVertex3f(1.0, -0.33, -1.0);
-        glVertex3f(1.0, 0.33, -1.0);
-        glVertex3f(0.33, 0.33, -1.0);
-        // Cara Trasera7.0
-        glColor3f(0.0, 1.0, 0.0); // MAGENTA
-        glVertex3f(-1.0, 0.33, -1.0);
-        glVertex3f(-0.33, 0.33, -1.0);
-        glVertex3f(-0.33, 1.0, -1.0);
-        glVertex3f(-1.0, 1.0, -1.0);
-        // Cara Trasera8.0
-        glColor3f(0.0, 1.0, 0.0); // NEGRO
-        glVertex3f(-0.33, 0.33, -1.0);
-        glVertex3f(0.33, 0.33, -1.0);
-        glVertex3f(0.33, 1.0, -1.0);
-        glVertex3f(-0.33, 1.0, -1.0);
-        // Cara Trasera9.0
-        glColor3f(0.0, 1.0, 0.0); // GRIS
-        glVertex3f(0.33, 0.33, -1.0);
-        glVertex3f(1.0, 0.33, -1.0);
-        glVertex3f(1.0, 1.0, -1.0);
-        glVertex3f(0.33, 1.0, -1.0);
-
-        //Cara LD
-
-       // Cara LD
-        glColor3f(1.0, 0.0, 1.0); // Rojo
-        glVertex3f(1.0, -1.0, 1.0);
-        glVertex3f(1.0, -1.0, 0.33);
-        glVertex3f(1.0, -0.33, 0.33);
-        glVertex3f(1.0, -0.33, 1.0);
-
-        // Cara LD 2.0
-        glColor3f(1.0, 0.0, 1.0); // VERDE
-        glVertex3f(1.0, -1.0, 0.33);
-        glVertex3f(1.0, -1.0, -0.33);
-        glVertex3f(1.0, -0.33, -0.33);
-        glVertex3f(1.0, -0.33, 0.33);
-        // Cara LD 3.0
-        glColor3f(1.0, 0.0, 1.0); // AZUL
-        glVertex3f(1.0, -1.0, -0.33);
-        glVertex3f(1.0, -1.0, -1.0);
-        glVertex3f(1.0, -0.33, -1.0);
-        glVertex3f(1.0, -0.33, -0.33);
-        // Cara LD 4.0
-        glColor3f(1.0, 0.0, 1.0); // AMA
-        glVertex3f(1.0, -0.33, 1.0);
-        glVertex3f(1.0, -0.33, 0.33);
-        glVertex3f(1.0, 0.33, 0.33);
-        glVertex3f(1.0, 0.33, 1.0);
-        // Cara LD 5.0
-        glColor3f(1.0, 0.0, 1.0); // BLANCO
-        glVertex3f(1.0, -0.33, 0.33);
-        glVertex3f(1.0, -0.33, -0.33);
-        glVertex3f(1.0, 0.33, -0.33);
-        glVertex3f(1.0, 0.33, 0.33);
-        // Cara LD 6.0
-        glColor3f(1.0, 0.0, 1.0); // CIAN
-        glVertex3f(1.0, -0.33, -0.33);
-        glVertex3f(1.0, -0.33, -1.0);
-        glVertex3f(1.0, 0.33, -1.0);
-        glVertex3f(1.0, 0.33, -0.33);
-        // Cara LD 7.0
-        glColor3f(1.0, 0.0, 1.0); // MAGENTA
-        glVertex3f(1.0, 0.33, 1.0);
-        glVertex3f(1.0, 0.33, 0.33);
-        glVertex3f(1.0, 1.0, 0.33);
-        glVertex3f(1.0, 1.0, 1.0);
-        // Cara LD 8.0
-        glColor3f(1.0, 0.0, 1.0); // NEGRO
-        glVertex3f(1.0, 0.33, 0.33);
-        glVertex3f(1.0, 0.33, -0.33);
-        glVertex3f(1.0, 1.0, -0.33);
-        glVertex3f(1.0, 1.0, 0.33);
-        // Cara LD 9.0
-        glColor3f(1.0, 0.0, 1.0); // GRIS
-        glVertex3f(1.0, 0.33, -0.33);
-        glVertex3f(1.0, 0.33, -1.0);
-        glVertex3f(1.0, 1.0, -1.0);
-        glVertex3f(1.0, 1.0, -0.33);
-
-
-        //Cara LI
-
-      // Cara LI
-        glColor3f(1.0, 1.0, 0.0); // Rojo
-        glVertex3f(-1.0, -1.0, 1.0);
-        glVertex3f(-1.0, -1.0, 0.33);
-        glVertex3f(-1.0, -0.33, 0.33);
-        glVertex3f(-1.0, -0.33, 1.0);
-
-        // Cara LI 2.0
-        glColor3f(1.0, 1.0, 0.0); // VERDE
-        glVertex3f(-1.0, -1.0, 0.33);
-        glVertex3f(-1.0, -1.0, -0.33);
-        glVertex3f(-1.0, -0.33, -0.33);
-        glVertex3f(-1.0, -0.33, 0.33);
-        // Cara LI 3.0
-        glColor3f(1.0, 1.0, 0.0); // AZUL
-        glVertex3f(-1.0, -1.0, -0.33);
-        glVertex3f(-1.0, -1.0, -1.0);
-        glVertex3f(-1.0, -0.33, -1.0);
-        glVertex3f(-1.0, -0.33, -0.33);
-        // Cara LI 4.0
-        glColor3f(1.0, 1.0, 0.0); // AMA
-        glVertex3f(-1.0, -0.33, 1.0);
-        glVertex3f(-1.0, -0.33, 0.33);
-        glVertex3f(-1.0, 0.33, 0.33);
-        glVertex3f(-1.0, 0.33, 1.0);
-        // Cara LI 5.0
-        glColor3f(1.0, 1.0, 0.0); // BLANCO
-        glVertex3f(-1.0, -0.33, 0.33);
-        glVertex3f(-1.0, -0.33, -0.33);
-        glVertex3f(-1.0, 0.33, -0.33);
-        glVertex3f(-1.0, 0.33, 0.33);
-        // Cara LI 6.0
-        glColor3f(1.0, 1.0, 0.0); // CIAN
-        glVertex3f(-1.0, -0.33, -0.33);
-        glVertex3f(-1.0, -0.33, -1.0);
-        glVertex3f(-1.0, 0.33, -1.0);
-        glVertex3f(-1.0, 0.33, -0.33);
-        // Cara LI 7.0
-        glColor3f(1.0, 1.0, 0.0); // MAGENTA
-        glVertex3f(-1.0, 0.33, 1.0);
-        glVertex3f(-1.0, 0.33, 0.33);
-        glVertex3f(-1.0, 1.0, 0.33);
-        glVertex3f(-1.0, 1.0, 1.0);
-        // Cara LI 8.0
-        glColor3f(1.0, 1.0, 0.0); // NEGRO
-        glVertex3f(-1.0, 0.33, 0.33);
-        glVertex3f(-1.0, 0.33, -0.33);
-        glVertex3f(-1.0, 1.0, -0.33);
-        glVertex3f(-1.0, 1.0, 0.33);
-        // Cara LI 9.0
-        glColor3f(1.0, 1.0, 0.0); // GRIS
-        glVertex3f(-1.0, 0.33, -0.33);
-        glVertex3f(-1.0, 0.33, -1.0);
-        glVertex3f(-1.0, 1.0, -1.0);
-        glVertex3f(-1.0, 1.0, -0.33);
-
-        //Cara TOP
-
-     // Cara TOP
-        glColor3f(0.0, 0.0, 1.0); // Rojo
-        glVertex3f(-1.0, 1.0, 1.0);
-        glVertex3f(-0.33, 1.0, 1.0);
-        glVertex3f(-0.33, 1.0, 0.33);
-        glVertex3f(-1.0, 1.0, 0.33);
-
-        // Cara TOP 2.0
-        glColor3f(0.0, 0.0, 1.0); // VERDE
-        glVertex3f(-0.33, 1.0, 1.0);
-        glVertex3f(0.33, 1.0, 1.0);
-        glVertex3f(0.33, 1.0, 0.33);
-        glVertex3f(-0.33, 1.0, 0.33);
-        // Cara TOP 3.0
-        glColor3f(0.0, 0.0, 1.0); // AZUL
-        glVertex3f(0.33, 1.0, 1.0);
-        glVertex3f(1.0, 1.0, 1.0);
-        glVertex3f(1.0, 1.0, 0.33);
-        glVertex3f(0.33, 1.0, 0.33);
-        // Cara TOP 4.0
-        glColor3f(0.0, 0.0, 1.0); // AMA
-        glVertex3f(-1.0, 1.0, 0.33);
-        glVertex3f(-0.33, 1.0, 0.33);
-        glVertex3f(-0.33, 1.0, -0.33);
-        glVertex3f(-1.0, 1.0, -0.33);
-        // Cara TOP 5.0
-        glColor3f(0.0, 0.0, 1.0); // BLANCO
-        glVertex3f(-0.33, 1.0, 0.33);
-        glVertex3f(0.33, 1.0, 0.33);
-        glVertex3f(0.33, 1.0, -0.33);
-        glVertex3f(-0.33, 1.0, -0.33);
-        // Cara TOP 6.0
-        glColor3f(0.0, 0.0, 1.0); // CIAN
-        glVertex3f(0.33, 1.0, 0.33);
-        glVertex3f(1.0, 1.0, 0.33);
-        glVertex3f(1.0, 1.0, -0.33);
-        glVertex3f(0.33, 1.0, -0.33);
-        // Cara TOP 7.0
-        glColor3f(0.0, 0.0, 1.0); // MAGENTA
-        glVertex3f(-1.0, 1.0, -0.33);
-        glVertex3f(-0.33, 1.0, -0.33);
-        glVertex3f(-0.33, 1.0, -1.0);
-        glVertex3f(-1.0, 1.0, -1.0);
-        // Cara TOP 8.0
-        glColor3f(0.0, 0.0, 1.0); // NEGRO
-        glVertex3f(-0.33, 1.0, -0.33);
-        glVertex3f(0.33, 1.0, 0.33);
-        glVertex3f(0.33, 1.0, -1.0);
-        glVertex3f(-0.33, 1.0, -1.0);
-        // Cara TOP 9.0
-        glColor3f(0.0, 0.0, 1.0); // GRIS
-        glVertex3f(0.33, 1.0, -0.33);
-        glVertex3f(1.0, 1.0, -0.33);
-        glVertex3f(1.0, 1.0, -1.0);
-        glVertex3f(0.33, 1.0, -1.0);
-
-
-        //Cara Bot
-
-    // Cara Bot
-        glColor3f(0.1, 0.1, 0.1); // Rojo
-        glVertex3f(-1.0, -1.0, 1.0);
-        glVertex3f(-0.33, -1.0, 1.0);
-        glVertex3f(-0.33, -1.0, 0.33);
-        glVertex3f(-1.0, -1.0, 0.33);
-
-        // Cara Bot 2.0
-        glColor3f(0.1, 0.1, 0.1); // VERDE
-        glVertex3f(-0.33, -1.0, 1.0);
-        glVertex3f(0.33, -1.0, 1.0);
-        glVertex3f(0.33, -1.0, 0.33);
-        glVertex3f(-0.33, -1.0, 0.33);
-        // Cara Bot 3.0
-        glColor3f(0.1, 0.1, 0.1); // AZUL
-        glVertex3f(0.33, -1.0, 1.0);
-        glVertex3f(1.0, -1.0, 1.0);
-        glVertex3f(1.0, -1.0, 0.33);
-        glVertex3f(0.33, -1.0, 0.33);
-        // Cara Bot 4.0
-        glColor3f(0.1, 0.1, 0.1); // AMA
-        glVertex3f(-1.0, -1.0, 0.33);
-        glVertex3f(-0.33, -1.0, 0.33);
-        glVertex3f(-0.33, -1.0, -0.33);
-        glVertex3f(-1.0, -1.0, -0.33);
-        // Cara Bot 5.0
-        glColor3f(0.1, 0.1, 0.1); // BLANCO
-        glVertex3f(-0.33, -1.0, 0.33);
-        glVertex3f(0.33, -1.0, 0.33);
-        glVertex3f(0.33, -1.0, -0.33);
-        glVertex3f(-0.33, -1.0, -0.33);
-        // Cara Bot 6.0
-        glColor3f(0.1, 0.1, 0.1); // CIAN
-        glVertex3f(0.33, -1.0, 0.33);
-        glVertex3f(1.0, -1.0, 0.33);
-        glVertex3f(1.0, -1.0, -0.33);
-        glVertex3f(0.33, -1.0, -0.33);
-        // Cara Bot 7.0
-        glColor3f(0.1, 0.1, 0.1); // MAGENTA
-        glVertex3f(-1.0, -1.0, -0.33);
-        glVertex3f(-0.33, -1.0, -0.33);
-        glVertex3f(-0.33, -1.0, -1.0);
-        glVertex3f(-1.0, -1.0, -1.0);
-        // Cara Bot 8.0
-        glColor3f(0.1, 0.1, 0.1); // NEGRO
-        glVertex3f(-0.33, -1.0, -0.33);
-        glVertex3f(0.33, -1.0, 0.33);
-        glVertex3f(0.33, -1.0, -1.0);
-        glVertex3f(-0.33, -1.0, -1.0);
-        // Cara Bot 9.0
-        glColor3f(0.1, 0.1, 0.1); // GRIS
-        glVertex3f(0.33, -1.0, -0.33);
-        glVertex3f(1.0, -1.0, -0.33);
-        glVertex3f(1.0, -1.0, -1.0);
-        glVertex3f(0.33, -1.0, -1.0);
-
-        glEnd();
+        for (int i = 0; i < 54; i += 4) {
+            glColor3f(colores[i / 4][0], colores[i / 4][1], colores[i / 4][2]);
+            glBegin(GL_QUADS);
+            for (int j = 0; j < 4; j++) {
+                glVertex3f(vertices[i + j].GetX(), vertices[i + j].GetY(), vertices[i + j].GetZ());
+            }
+            glEnd();
+        }
 
         glutSwapBuffers();
     
