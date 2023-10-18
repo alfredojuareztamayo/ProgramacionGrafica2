@@ -1,5 +1,6 @@
 #include "main.h"
 #include "Rubik.h"
+#include "Figures.h"
 #include <GL/glut.h>
 
 
@@ -22,7 +23,8 @@
 void DisplayRubik() {
     Rubik Cube = Rubik(0.5,0.5,0.5);
     //Cube.GenerateCube();
-    Cube.GenerateMultiCubes();
+    Cube.GenerateMultiCubesList();
+    Cube.GenerateMultiCubesFig();
 }
 
 void reshape(int width, int height) {
@@ -38,7 +40,7 @@ void display() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt(3.0, 3.0, 3.0, 1.0, 1.0, 1.0, 0.0, 1.0, 0.0);
+    gluLookAt(5.0, 5.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 
 
 
@@ -61,7 +63,7 @@ int main(int argc, char** argv) {
 
     glutDisplayFunc(display);
 
-   // glutKeyboardFunc(keyboard);
+   glutKeyboardFunc(keyboard);
     glutReshapeFunc(reshape);
 
     glEnable(GL_DEPTH_TEST);

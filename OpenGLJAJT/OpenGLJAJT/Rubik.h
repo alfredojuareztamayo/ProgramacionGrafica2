@@ -9,13 +9,15 @@ public:
 	float tempX;
 	float tempY;
 	float tempZ;
+	
 public:
 	Rubik();
 	Rubik(float m_x, float m_y, float m_z);
+	
 	void RotateX();
 	void RotateY();
 	void RotateZ();
-	void GenerateCube();
+	void GenerateCubeLists();
 	//float Vertices[];
 	void GenerateFrontalFace();
 	void GenerateBackFace();
@@ -23,6 +25,8 @@ public:
 	void GenerateLeftFace();
 	void GenerateTopFace();
 	void GenerateBotFace();
-	void GenerateMultiCubes();
+	void GenerateMultiCubesList();
+
+	void GenerateMultiCubesFig();
 };
 

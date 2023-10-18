@@ -127,12 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Colores.h" />
     <ClInclude Include="Rubik.h" />
     <ClInclude Include="Figures.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="Transformations.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Colores.cpp" />
     <ClCompile Include="Rubik.cpp" />
     <ClCompile Include="Figures.cpp" />
     <ClCompile Include="main.cpp" />

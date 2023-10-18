@@ -399,39 +399,39 @@ void displayCube() {
     
 }
 
-//void keyboard(unsigned char key, int x, int y) {
-//    switch (key) {
-//    case 'w':
-//        rotationAngle += 5.0f;  // Rotación hacia arriba
-//        //posX = 0;
-//        //posY = 0;
-//        posZ += 1;
-//        break;
-//    case 's':
-//        rotationAngle -= 5.0f;  // Rotación hacia abajo
-//        //posX = 0;
-//        //posY = 0;
-//        posZ -= 1;
-//        break;
-//    case 'd':
-//        rotationAngle += 5.0f;  // Rotación hacia la derecha
-//        //posX = 0;
-//        posY -= 1;
-//        //posZ = 0;
-//        break;
-//    case 'a':
-//        rotationAngle -= 5.0f;  // Rotación hacia la izquierda
-//        //posX = 0;
-//        posY += 1;
-//        //posZ = 0;
-//        break;
-//    case 32:
-//        rotationAngle = 0.0f;  // Rotación hacia la izquierda
-//        posX = 0;
-//        posY = 0;
-//        posZ = 0;
-//        break;
-//    }
-//
-//    glutPostRedisplay();
-//}
+void keyboard(unsigned char key, int x, int y) {
+    switch (key) {
+    case 'w':
+        rotationAngle += 5.0f;  // Rotación hacia arriba
+        //posX = 0;
+        //posY = 0;
+        posZ += 1;
+        break;
+    case 's':
+        rotationAngle -= 5.0f;  // Rotación hacia abajo
+        //posX = 0;
+        //posY = 0;
+        posZ -= 1;
+        break;
+    case 'd':
+        rotationAngle += 5.0f;  // Rotación hacia la derecha
+        //posX = 0;
+        posY -= 1;
+        //posZ = 0;
+        break;
+    case 'a':
+        rotationAngle -= 5.0f;  // Rotación hacia la izquierda
+        //posX = 0;
+        posY += 1;
+        //posZ = 0;
+        break;
+    case 32:
+        rotationAngle = 0.0f;  // Rotación hacia la izquierda
+        posX = 0;
+        posY = 0;
+        posZ = 0;
+        break;
+    }
+
+    glutPostRedisplay();
+}
