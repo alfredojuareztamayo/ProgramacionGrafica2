@@ -1,6 +1,6 @@
 #include "main.h"
 #include "Rubik.h"
-#include "Figures.h"
+//#include "Figures.h"
 #include <GL/glut.h>
 
 
@@ -20,8 +20,10 @@
 //    glFlush();  // Forzar la representación en pantalla
 //}
 
+Rubik Cube =  Rubik(0.5, 0.5, 0.5);
+
 void DisplayRubik() {
-    Rubik Cube = Rubik(0.5,0.5,0.5);
+   
     //Cube.GenerateCube();
     Cube.GenerateMultiCubesList();
     Cube.GenerateMultiCubesFig();
@@ -40,9 +42,7 @@ void display() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt(5.0, 5.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
-
-
+    gluLookAt(-3.0, 5.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
 
     DisplayRubik();
 
@@ -51,6 +51,29 @@ void display() {
     glutSwapBuffers();
 
 }
+
+void keyboard(unsigned char key, int x, int y) {
+    switch (key) {
+    case 'w':
+        Cube.RotateLeftFace();
+        break;
+    case 's':
+       
+        break;
+    case 'd':
+       
+        break;
+    case 'a':
+        
+        break;
+    case 32:
+       
+        break;
+    }
+
+    glutPostRedisplay();
+}
+
 
 int main(int argc, char** argv) {
 

@@ -14,7 +14,7 @@ public:
 	Rubik();
 	Rubik(float m_x, float m_y, float m_z);
 	
-	void RotateX();
+	void RotateX(Rubik &t);
 	void RotateY();
 	void RotateZ();
 	void GenerateCubeLists();
@@ -28,5 +28,7 @@ public:
 	void GenerateMultiCubesList();
 
 	void GenerateMultiCubesFig();
+	void RotateLeftFace();
+
 };
 

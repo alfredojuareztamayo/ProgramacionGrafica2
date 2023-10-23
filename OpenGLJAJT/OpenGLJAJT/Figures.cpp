@@ -1,6 +1,7 @@
 #include "Figures.h"
 #include <GL/glut.h>
 #include "Transformations.h"
+#include "Rubik.h"
 
 float rotationAngle = 0.0f;
 float posX;
@@ -399,13 +400,10 @@ void displayCube() {
     
 }
 
-void keyboard(unsigned char key, int x, int y) {
+void keyboard2(unsigned char key, int x, int y) {
     switch (key) {
     case 'w':
-        rotationAngle += 5.0f;  // Rotación hacia arriba
-        //posX = 0;
-        //posY = 0;
-        posZ += 1;
+        
         break;
     case 's':
         rotationAngle -= 5.0f;  // Rotación hacia abajo
